@@ -27,3 +27,21 @@ DEFINES += QT_DEPRECATED_WARNINGS
 qnx: target.path = /tmp/$${TARGET}/bin
 else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
+
+DISTFILES += \
+    android/AndroidManifest.xml \
+    android/gradle/wrapper/gradle-wrapper.jar \
+    android/gradlew \
+    android/res/values/libs.xml \
+    android/build.gradle \
+    android/gradle/wrapper/gradle-wrapper.properties \
+    android/gradlew.bat \
+    android/res/drawable/splash.xml \
+    android/res/drawable/splashscreen.png \
+    android/res/drawable-hdpi/splashscreen.png \
+    android/res/drawable-ldpi/splashscreen.png \
+    android/res/drawable-mdpi/splashscreen.png \
+    android/res/drawable-xhdpi/splashscreen.png \
+    android/res/values/apptheme.xml
+
+ANDROID_PACKAGE_SOURCE_DIR = $$PWD/android
